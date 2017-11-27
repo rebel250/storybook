@@ -35,7 +35,8 @@
     "lint:md": "remark",
     "publish": "lerna publish",
     "test": "node ./scripts/test.js",
-    "repo-dirty-check": "node ./scripts/repo-dirty-check"
+    "repo-dirty-check": "node ./scripts/repo-dirty-check",
+    "storybook": "start-storybook -p 6006"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
