@@ -5,6 +5,7 @@ export default function(context) {
   const { queryParams, reduxStore, window, channel } = context;
   // set the story if correct params are loaded via the URL.
   if (queryParams.selectedKind) {
+    console.log('dispatching to store');
     reduxStore.dispatch(selectStory(queryParams.selectedKind, queryParams.selectedStory));
   }
 

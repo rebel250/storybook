@@ -32,7 +32,9 @@ export default class ConfigApi {
   }
 
   configure(loaders, module) {
+    console.log('running configure');
     const render = () => {
+      console.log('running configure render');
       try {
         this._renderMain(loaders);
       } catch (error) {
